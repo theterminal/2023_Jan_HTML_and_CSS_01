@@ -1,0 +1,18 @@
+form {
+    margin: 50px auto;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+
+form div {
+    margin: 10px auto;
+}
+
+fieldset {
+    margin: 25px auto;
+    padding: 20px;
+}
+
+fieldset div {
+    margin: 10px auto;
+}
