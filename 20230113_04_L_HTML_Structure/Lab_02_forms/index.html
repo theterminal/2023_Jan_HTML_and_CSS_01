@@ -10,21 +10,31 @@
 <body>
     <h1>FORMS</h1>
 
-    <!-- when using 'for' and 'id' element together you can click on the label name
-    and the cursor will go into the empty field corresponding to the element -->
+    <!--
+        When using 'for' and 'id' element together you can click on the label name and the cursor will go into the empty field,
+        corresponding to that element.
 
-    <!-- when using 'name' attribute and we have it the same on all the options (like
-    what we have in the section for selecting a car dealer below), we can shoose only one
-    of many options -->
+        When using 'name' attribute and we have it the same on all the options (like what we have in the section for selecting a
+        car dealer below), we can shoose only one of many options.
+
+        'required="true"' attribute makes the field to be field required, otherwise it is not going to submit the form.
+        'placeholder="some text"' displays a hint to the user what type and form is the expected information.
+        'value' displays the default value in the field and that value can be altered or added to if needed.
+        'disabled="true"' - when added as an attribute it will disable the element.
+    -->
 
     <form action="">
         <div>
             <label for="username">username</label>
-            <input id="username" name="username" type="text">
+            <input id="username" name="username" type="text" placeholder="enter username" required="true">
         </div>
         <div>
             <label for="password">password</label>
             <input id="password" name="pass" type="password">
+        </div>
+        <div>
+            <label for="screenname">screenname</label>
+            <input id="screenname" name="screenname" type="text" value="screen name">
         </div>
 
         <div>
@@ -116,15 +126,26 @@ Third line.
 
     <!--
         Form elements - Buttons
-        Submit button – sends the form data to the server
-        Reset button – resets all form fields
-        The <button> tag defines a clickable button        
+            Submit button – sends the form data to the server
+            Reset button – resets all form fields
+            The <button> tag defines a clickable button
+        
+        It is better to use 'button' element instead 'input type="button"' because of the flexibility that the 'button' gives you.
+        'button' element can contain other elements like 'img' and can support 'b' tags and more.
+
+        'button' element has different functionality when it is inside and outside a 'form' element.
+        When it is inside the default function is 'submit' even is it is not spesifed in the 'type' field. 
     -->
     <form>
         <div>
             <input type="submit" value="Apply Now">
             <input type="reset">
             <button type="button">Click me</button>
+        </div>
+        <div>
+            <button type="button">Button</button>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
         </div>
     </form>
 </body>
