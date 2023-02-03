@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>FORMS</h1>
+
+    <!-- when using 'for' and 'id' element together you can click on the label name
+    and the cursor will go into the empty field corresponding to the element -->
+
+    <!-- when using 'name' attribute and we have it the same on all the options (like
+    what we have in the section for selecting a car dealer below), we can shoose only one
+    of many options -->
+
+    <form action="">
+        <div>
+            <label for="username">username</label>
+            <input id="username" name="username" type="text">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input id="password" name="pass" type="password">
+        </div>
+
+        <div>
+            <h2>Select a car brand</h2>
+            <label for="volvo">Volvo</label>
+            <input id="volvo" type="checkbox" value="VOLVO" name="volvo">
+
+            <label for="bmw">BMW</label>
+            <input id="bmw" type="checkbox" value="BMW" name="bmw">
+
+            <label for="audi">Audi</label>
+            <input id="audi" type="checkbox" value="AUDI" name="audi">
+        </div>
+
+        <div>
+            <h2>Select a car dealer</h2>
+            <label for="de">Germany</label>
+            <input id="de" type="radio" name="location" value="de">
+
+            <label for="bg">Bulgaria</label>
+            <input id="bg" type="radio" name="location" value="bg">
+
+            <label for="fe">France</label>
+            <input id="fe" type="radio" name="location" value="fe">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Form elements 'fieldset', 'legend' -->
+    <fieldset>
+        <legend>Customer Details</legend>
+        <div>
+            <label for="1">First Name</label>
+            <input id="1" type="text" name="fName">
+        </div>
+        <div>
+            <label for="2">Last Name</label>
+            <input id="2" type="text" name="lName">
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Order Details</legend>
+        <div>
+            <label for="3">Quantity</label>
+            <input id="3" type="text" name="quantity">
+        </div>
+        <div>
+            <label for="4">Remarks</label>
+            <textarea id="4" name="remarks" cols="30" rows="10"></textarea>
+        </div>
+    </fieldset>
+
+    <!-- Number and range fields -->
+    <fieldset>
+        <div>
+            <label for="field_age">Age</label>
+            <input type="number" name="age" id="field_age" min="18" max="99" value="21">
+        </div>
+        <div>
+            <label for="field_sat">Satisfaction</label>
+            <input type="range" name="satisfaction" id="field_sat" min="1" max="5" value="3"> (1-5)
+        </div>
+    </fieldset>
+
+    <!-- Form elements 'select', 'option' -->
+    <form action="">
+        <label for="size">Size</label>
+        <select name="size" id="size">
+            <option value="39">39 EU</option>
+            <option value="40">40 EU</option>
+            <option value="41.5">41.5 EU</option>
+        </select>
+    </form>
+
+    <!--
+        Form elment 'textarea' - defines a multi-line input field.
+        Attributes:
+            rows - specifies the visible number of lines in a text area
+            cols - specifies the visible width of a text area
+    -->
+    <label for="t-area">Text Area Field</label>
+    <textarea name="" id="t-area" cols="30" rows="10">
+Text area is multi-line.
+This is the second line.
+Third line.
+    </textarea>
+
+    <!--
+        Form elements - Buttons
+        Submit button – sends the form data to the server
+        Reset button – resets all form fields
+        The <button> tag defines a clickable button        
+    -->
+    <form>
+        <div>
+            <input type="submit" value="Apply Now">
+            <input type="reset">
+            <button type="button">Click me</button>
+        </div>
+    </form>
+</body>
+</html>
