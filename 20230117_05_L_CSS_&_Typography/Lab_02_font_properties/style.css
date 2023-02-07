@@ -1,0 +1,95 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    width: 700px;
+    background-color: rgb(254, 232, 205);
+}
+
+p.test-1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.test-2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* This is the way to define a custom font family if you have the font family saved locally. */
+@font-face {
+    font-family: 'ShadowsIntoLight-Regular';
+    src: url('fonts/ShadowsIntoLight-Regular.ttf');
+}
+p.test-3 {
+    font-family: "ShadowsIntoLight-Regular";
+    font-size: 18px;
+}
+
+.main-ul {
+    font-size: 18px;
+}
+
+/* 'em' value of the 'font-size' property is relative multiplier to the parent font-size. In this case 18px */
+.main-ul li {
+    /* font-family: "ShadowsIntoLight-Regular"; */
+    font-size: 1.5em;
+}
+
+.main-ul > li > ul > li {
+    font-family: "ShadowsIntoLight-Regular";
+    font-size: 1.5em;
+}
+
+ul.rem-setting {
+    font-size: 2rem;
+}
+
+ul.rem-setting > li > ul > li {
+    font-size: 1.5em;
+}
+
+.example-4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    text-align: justify;
+    text-indent: 50px;
+}
+
+.example-5 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+code {
+    font-style: italic;
+    /* background-color: white; */
+}
+
+p code {
+    display: block;
+    background-color: rgb(78 241 205);
+    padding: 10px;
+}
+
+.example-6 {
+    padding: 10px;
+    background-color: rgb(89, 89, 114);
+    color: white;
+    /* word-break: break-all; */
+    word-break: normal;
+    /* cursor: crosshair; */
+    /* cursor: pointer; */
+    cursor: grab;
+    outline: 5px solid black;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
