@@ -91,5 +91,6 @@ p code {
     cursor: grab;
     outline: 5px solid black;
     letter-spacing: 2px;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 1.5;
 }
