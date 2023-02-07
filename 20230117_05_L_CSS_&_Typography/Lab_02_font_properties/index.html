@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Properties</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Font Properties</h1>
+
+            <h2>1. font-family</h2>
+
+            <p>
+                <code>
+                    p.ar { <br>
+                    font-family: Ariel, Helvetica; <br>
+                    }
+                </code>
+            </p>
+
+            <p>
+                <code>
+                    p.tim { <br>
+                    font-family: "Times New Roman"; <br>
+                    }
+                </code>
+            </p>
+
+            <hr>
+
+            <p class="test-1">Font family: Ariel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim?</p>
+
+            <hr>
+
+            <p class="test-2">Font family: Courier New. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim?</p>
+
+            <hr>
+
+            <p>Look at the CSS file and it is clear that we have 3 or more font types declaired. The reason is if the browser doesn't support some of the fonts to have a fallback font.</p>
+
+            <h2>Google Fonts</h2>
+
+            <hr>
+
+            <p class="test-3">Font family: Courier New. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam odit ex itaque aut, odio vitae ipsa perferendis minus culpa necessitatibus rem dolore repellendus assumenda modi pariatur. Sint, ipsam enim?</p>
+
+            <p><a href="https://fonts.google.com">https://fonts.google.com</a></p>
+        </section>
+
+        <section>
+            <h2>2. Font size px, em, pt</h2>
+
+            <p>In the following 'ul' element in the 'class' 'main-ul' the font-size is set to 18px.</p>
+
+            <p>
+                <code>
+                    .main-ul {<br>
+                    font-size: 18px;<br>
+                    }
+                </code>
+            </p>
+
+            <p>There is no elements directly affected by the 18px declaration.</p>
+            
+            <hr>
+            
+            <p>Then the font-size is set to '1.5em' which is 1.5 * 18px = 27px</p>
+            <p>The target are all 'li' elements in an 'ul' elments</p>
+
+            <p>
+                <code>
+                    .main-ul li {<br>
+                    font-family: "ShadowsIntoLight-Regular";<br>
+                    font-size: 1.5em;<br>
+                }
+                </code>
+            </p>
+
+            <p>The elements directly affected by the declaration are the direct children 'li' of the 'ul' element with class '.main-ul'</p>
+            
+            <hr>
+            
+            <p>Then the font-size is set to '1.5em' which is 1.5 * 27px = 40.5px</p>
+            <p>The target elements are all 'li' elements in an 'ul' element which 'ul' element is in 'li' element which 'li' element is in element with class '.main-ul'</p>
+
+            <p>
+                <code>
+                    .main-ul > li > ul > li {<br>
+                    font-family: "ShadowsIntoLight-Regular";<br>
+                    font-size: 1.5em;
+                    }
+                </code>
+            </p>
+            
+            <hr>
+            
+            <p>If the nesting of the elements continues, the size is getting larger by the same factor 1.5</p>
+            
+            <hr>
+
+            <p>The following is the result of the above code and explenation</p>
+            
+            <ul class="main-ul">
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>
+                    <ul>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                    </ul>
+                </li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>
+                    <ul>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                        <li>
+                            <ul>
+                                <li>Level 3</li>
+                                <li>Level 3</li>
+                                <li>Level 3</li>
+                                <ul>
+                                    <li>Level 4</li>
+                                    <li>Level 4</li>
+                                    <li>Level 4</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Font size px, rem</h2>
+
+            <p>When setting 'rem' value of the 'font-size' property, the size of the font is calculated based on the font size set at 'html' level.</p>
+            <p>As it seen bellow the 'Level 1' 'li' elements (set to '2rem') are with the size of 36px, because the 'html' font size is set to 18px.</p>
+            <p>The size of 'Level 2', 'Level 3', 'Level 4' elements (level 2 and above are set to 1.5em) is 54px (36px * 1.5em)</p>
+
+            <ul class="rem-setting">
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>
+                    <ul>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                        <li>Level 2</li>
+                    </ul>
+                </li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <li>Level 1</li>
+                <ul>
+                    <li>Level 2</li>
+                    <li>Level 2</li>
+                    <li>Level 2</li>
+                    <li>
+                        <ul>
+                            <li>Level 3</li>
+                            <li>Level 3</li>
+                            <li>Level 3</li>
+                            <ul>
+                                <li>Level 4</li>
+                                <li>Level 4</li>
+                                <li>Level 4</li>
+                            </ul>
+                        </ul>
+                    </li>
+                </ul>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. 'font-weight', 'font-style', 'text-alingn', 'text-indent', 'text-overflow', 'white-space', 'overflow', '... '</h2>
+
+            <hr>
+
+            <h3>4.1 Example - Declairing the properties 'font-family', 'font-weight', 'font-style', 'text-align', 'text-indent' and the result</h3>
+
+            <p>The following CSS declarations must be set to have the result bellow:</p>
+
+            <p>
+                <code>
+                    .example-4 {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;<br>
+                    font-weight: 600;<br>
+                    font-style: italic;<br>
+                    text-align: justify;<br>
+                    text-indent: 50px;<br>
+                    }
+                </code>
+            </p>
+
+            <p class="example-4">This is the result. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quaerat facere quam sit quas. Libero possimus delectus nisi totam quisquam similique officia esse sint nobis impedit dolores omnis, earum culpa!</p>
+
+            <hr>
+
+            <h3>4.2 Example - Having the three dots ... at the end of the line of the paragraph are achieved by using the following properties: 'text-overflow', 'white-space', 'overflow'</h3>
+
+            <p>The following CSS declarations must be set to have the result bellow:</p>
+
+            <p>
+                <code>
+                    .example-5 {<br>
+                    text-overflow: ellipsis;<br>
+                    white-space: nowrap;<br>
+                    overflow: hidden;<br>   
+                    }
+                </code>
+            </p>
+
+            <p class="example-5">This is the result. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quaerat facere quam sit quas. Libero possimus delectus nisi totam quisquam similique officia esse sint nobis impedit dolores omnis, earum culpa!</p>
+        </section>
+
+        <section>
+            <h2>5. Properties 'text-transform', 'word-break', 'background-color', 'cursor', 'outline', 'letter-spacing', 'line-height'</h2>
+
+            <hr>
+
+            <p class="example-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur mollitia eveniet totam quaerat. Eum unde nesciunt, in libero minus labore dolor recusandae aliquid necessitatibus accusantium cupiditate? Dolores sequi quibusdam repudiandae qui vero officia voluptate tempore expedita accusamus ratione iusto deleniti, quisquam blanditiis ipsa ut. Ducimus explicabo repellendus possimus veritatis minima. Magni, facere? Id quos voluptas architecto! Aspernatur officia nobis placeat id, eos possimus, excepturi eveniet voluptatem commodi repellendus incidunt atque sed ab labore exercitationem quia, voluptates culpa pariatur. Voluptate nesciunt est nemo architecto alias recusandae hic voluptas natus, optio reiciendis itaque cumque eos ullam qui facere enim. Cumque, tenetur odit!</p>
+
+            <p>Here is the CSS for the paragraph above
+                <code>
+                    .example-6 {<br>
+                        padding: 10px;<br>
+                        background-color: rgb(89, 89, 114);<br>
+                        color: white;<br>
+                        word-break: normal;<br>
+                        cursor: grab;<br>
+                        outline: 5px solid black;<br>
+                        letter-spacing: 2px;<br>
+                        line-height: 30px;<br>
+                    }
+                </code>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
