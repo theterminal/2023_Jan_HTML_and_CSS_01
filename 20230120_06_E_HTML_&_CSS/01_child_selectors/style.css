@@ -1,0 +1,74 @@
+html{
+    width: 700px;
+    padding: 25px;
+}
+
+hr{
+    margin: 50px 0px;
+}
+
+article{
+    margin: 25px 0px;
+    padding: 25px;
+    background-color: rgb(243, 243, 243);
+}
+
+pre code {
+    background-color: rgb(128 128 128);
+    border: 5px solid #616161;
+    display: block;
+    padding: 10px;
+    color: wheat;
+    font-size: 15px;
+    line-height: 1.2;
+  }
+
+/* This syntax will select all <li> elements within <ul> element but only those that are direct chile of the <ul> element. */
+ul.ex-1 > li{
+    background-color: blue;
+}
+
+/* This syntax will select all <li> elements within <ul> element. */
+ul.ex-2 li{
+    background-color: red;
+}
+
+/* Adjacent Sibling Combinator */
+/* 'p + p' in the bellow selector means paragraph right after a paragraph and on the same level (adjacent sibling). Pay attention that the first <p> is NOT selected because it is NOT after adjacent sibling <p> */
+.container-adjacent p + p{
+    background-color: orange;
+    padding: 5px;
+}
+
+/* Adjacent Sibling Combinator */
+/* 'div + p' in the bellow selector means <p> right after a <div> and on the same level (adjacent sibling). */
+.container-adjacent-2 div + p{
+    background-color: red;
+    padding: 5px;
+}
+
+/* General Sibling Combinator */
+/* Same as Adjacent Combinator but selects all <p> elements after <p> elements regardless of whether or not there are elements in between. */
+.container-general p ~ p{
+    background-color: green;
+    color: white;
+    padding: 5px;
+}
+
+/* General Sibling Combinator */
+/* 'div ~ p' in the bellow selector means <p> right after a <div> and on the same level (adjacent sibling). */
+.container-general-2 div ~ p{
+    background-color: rgb(105, 114, 87);
+    padding: 5px;
+    color: #fff;
+}
+
+.nth-example li{
+    background-color: unset;
+}
+
+/* :nth-child() - could be 1, 2, ... 10; odd, even, formula...; */
+/* https://css-tricks.com/examples/nth-child-tester */
+.nth-example li:nth-child(even){
+    background-color: greenyellow;
+}
