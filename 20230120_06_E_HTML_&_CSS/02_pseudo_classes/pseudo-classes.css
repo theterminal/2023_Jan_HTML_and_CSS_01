@@ -1,0 +1,72 @@
+body{
+    margin: 0px;
+    padding: 50px;
+    background-color: beige;
+}
+
+section{
+    margin: 20px 0px;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid gray;
+}
+
+div{
+    margin: 10px 0px;
+}
+
+pre{
+    background-color: #e5e5e5;
+    font-size: 16px;
+    font-style: italic;
+}
+
+code{
+    word-break: break-all;
+    background-color: #e3e3e3;
+    display: block;
+    padding: 20px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.link:visited{
+    color: red;
+}
+
+.link:active{
+    color: green;
+}
+
+.input{
+    cursor: pointer;
+}
+
+.input:focus{
+    background-color: aqua;
+}
+
+.input:active{
+    background-color: red;
+}
+
+.btn{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: orange;
+}
+
+.btn.disabled:disabled{
+    background-color: lightgray;
+    color: #6d6d6d;
+}
+
+span{
+    color: darkgreen;
+    text-transform: uppercase;
+    font-weight: 700;
+}
