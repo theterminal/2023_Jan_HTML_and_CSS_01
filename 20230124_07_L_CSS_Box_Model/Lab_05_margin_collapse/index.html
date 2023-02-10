@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin collapse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Box-sizing</h1>
+
+    <p>The default state of the property <span>box-sizing</span> is <span>'box-sizing: content-box;'</span> which means that the width of the container that we define will be only for the content and NOT including padding and border. Margins are ALWAYS outside of the box.</p>
+
+    <p>The other way, to have everything calculated in the with you define is <span>'box-sizing: border-box;'</span>. In this case we define the maximum width of the container from the border inword, including the border.</p>
+
+    <h2>Good practice - CSS Box-sizing Reset</h2>
+
+    <p>It is a good practice to do the following at the top of the CSS document:<br><br>
+
+    <code>
+        html {<br>
+            box-sizing: border-box;<br>
+        }<br>
+<br>
+        *,<br>
+        *:before,<br>
+        *:after {<br>
+            box-sizing: inherit;<br>
+        }<br>
+    </code>
+    </p>
+
+    <h2 class="title first">Title 1</h2>
+    <h2 class="title second">Title 2</h2>
+    <h2 class="title third">Title 3</h2>
+</body>
+</html>
