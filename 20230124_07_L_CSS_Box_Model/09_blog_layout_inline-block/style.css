@@ -1,0 +1,42 @@
+html {
+box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: inherit;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(51, 51, 51);
+}
+
+article {
+    margin: 1%;
+    width: 70%;
+    float: left;
+}
+
+article section {
+    margin-bottom: 50px;
+}
+
+aside {
+    margin: 1%;
+    width: 25%;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
