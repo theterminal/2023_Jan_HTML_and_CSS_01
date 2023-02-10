@@ -1,0 +1,37 @@
+body{
+    margin: 20px;
+}
+
+.title {
+    background-color: orange;
+    margin: 0px;
+    /* display: inline-block; */
+}
+
+.first {
+    margin-bottom: 30px;
+}
+
+.second {
+    margin-bottom: 120px;
+}
+
+p {
+    background-color: bisque;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+span {
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+code {
+    font-size: 16px;
+    font-style: oblique;
+    font-weight: bold;
+}
