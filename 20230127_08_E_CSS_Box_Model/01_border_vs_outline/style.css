@@ -1,0 +1,24 @@
+body {
+  padding: 30px;
+}
+
+.border {
+  border: 10px solid red;
+}
+
+.outline {
+  border: 3px solid green;
+  outline: 5px solid orange;
+  outline-offset: -15px;
+}
+
+.border-2 {
+  border: 10px solid red;
+}
+
+.outline-2 {
+  border: 3px solid green;
+  outline: 5px solid orange;
+  outline-offset: 10px;
+  /* outline-offset: -10px; */
+}
