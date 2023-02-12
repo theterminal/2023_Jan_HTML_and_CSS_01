@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container static">
+      <img
+        src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt=""
+      />
+
+      <h2>Static</h2>
+      <h3>'position: static'</h2>
+
+      <button type="button">I am just a button</button>
+
+      <p><span>'position: static;'</span> is the default position value that every element is created with, regardless of the type of the element. It is NOT necessary to declair it because it is its default value.</p>
+      
+      <p>In <span>'position: static;'</span> mode, the element cannot be positioned! The value must be changed to another positon value (relative, absolute, fixed or sticky).</p>
+      
+      <p>When the element is inspected it is visible that, for example, the properies <span>'top: 50px'</span> and <span>'left: 50px'</span> are set but they do not have an affect on positioning the image.</p>
+      
+      <p>Example for <span>'position: static;'</span><br><br><span>.class-exmple: {<br> position: static;<br> top: 50px;<br> left: 50px;<br }></span></p>
+    </div>
+
+    <div class="container relative">
+      <img
+        src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt=""
+      />
+
+      <h2>Relative</h2>
+      <h3>'position: relative;'</h3>
+
+      <button type="button">I am just a button</button>
+
+      <p>When using <span>'position: relatve;'</span> the flow of our HTML stays unchanged. And the declarations of <span>'top'</span>, <span>'bottom'</span>, <span>'left'</span>... just position our element relative to its original (initial static) position. All elements, their margins, paddings etc. stay same as if the position of our element is <span>'position: static;</p>
+          
+      <p>Example for <span>'position: relative;'</span><br><br><span>.class-exmple: {<br> position: relative;<br> top: 50px;<br> left: 50px;<br>}</span></p>
+
+      <p><span>'top: 50px;'</span> - this means that our actual element will be positiond 50px DOWN from the top of where it would be if the declaration was <span>'position: static'</span></p>
+
+      <p>The values can be positive or negative.</p>
+    </div>
+
+    <div class="container absolute">
+      <img
+        src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt=""
+      />
+
+      <h2>Absolute</h2>
+      <h3>'position: absolute;'</h3>
+
+      <button type="button">I am just a button</button>
+
+      <p>To use <span>'position: absolute;'</span> the rule in the image CSS must be set to <span>'position: absolute;'</span> AND the container of the element should have the property<span>'position: relative;'</span> set. If we do NOT have that the image will search UP the tree until it finds container with position DIFFERENT than <span>'static'</span> and will position the image according to that element.</p>
+      
+      <p><span>'position: absolute'</span> creates a layer above the original layer and the image element or the element we need to position absolute occupies that new layer. The original layer changes the flow of the HTML elements.</p>
+
+      <p>When using negative values and the element leaves the container borders, the part that is out of the container can be hidden with the <span>'overflow: hidden:'</span> rule.</p>
+    </div>
+
+    <div class="container fixed">
+      <img
+        src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt=""
+      />
+
+      <h2>Fixed</h2>
+      <h3>'position: fixed'</h3>
+
+      <button type="button">I am just a button</button>
+
+      <p>Position <span>'fixed'</span> just as the <span>'absolute'</span> takes the element out of the document flow.</p>
+      
+      <p><span>'position: fixed'</span> is positioning the element ALWAYS to the HTML (browser). It is NOT necessary the container of the element to have <span>'position: relative'</span> or other.</p>
+
+      <p>Example for <span>'position: fixed;'</span> (it is a round image at the right bottom of the page)</p>
+      <p>
+        <span>
+        .fixed{<br>
+          background-color: lightpink;<br>
+          position: relative;<br>
+        }<br><br>
+      
+        .fixed img{<br>
+          width: 50px;<br>
+          height: 50px;<br>
+          border-radius: 100%;<br>
+          position: fixed;<br>
+          bottom: 20px;<br>
+          right: 20px;<br>
+        }
+        </span></p>
+    </div>
+
+    <div class="container sticky">
+      <img
+        src="https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        alt=""
+      />
+
+      <h2>Sticky</h2>
+      <h3>'position: sticky'</h3>
+
+      <button type="button">I am just a button</button>
+
+      <p><span>'position: stiky'</span> makes the element to stick at the spesified position and to stay there while the viewer scrolls out of the container on the screen. The element DOES NOT leave the border of the container where it is created...</p>
+
+      <p>Example for <span>'position: sticky;'</span></p>
+
+      <p>
+        <span>
+        .sticky{<br>
+          background-color: lightsalmon;<br>
+          /* height: 400px; */<br>
+          /* overflow: auto; */<br>
+        }<br>
+<br>
+        .sticky p{<br>
+          margin: 25px 0px;<br>
+        }<br>
+<br>
+        .sticky img{<br>
+          position: sticky;<br>
+          top: 0px;<br>
+        }
+        </span></p>
+
+      <p>The aboive CSS declarations are for the current image, box, container. You can look at the actual CSS and see that it is the same. Also I am just writing all this because I neeed a paragraph and I am not a fan of the Lorem text. It is making me dizzy when I look at it and don't think that it is the same as real text. If you don't believe me just take a look at this paragraph and compare it with the next two paragraphs. If you're wondering why do I have so many Ipsom paragraphs bellow in the section called 'Just a test' - it is because I want you to see how the image of the sticky paragraph is going up with its own paragraph and for that reason I need to be able to scroll down so the image can leave the visible part of the screen...</p>
+    </div>
+
+    <div class="container sticky-test">
+      <h2>Just a test</h2>
+
+      <button type="button">I am just a button</button>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores necessitatibus id quod ducimus dolorum eos, molestias ipsam commodi illo officiis explicabo labore iusto praesentium nostrum aliquam qui quaerat nobis! Quo fuga eaque sunt earum dignissimos, nihil quas saepe qui ducimus explicabo voluptatem neque consequuntur tempore temporibus ipsum, facere placeat.</p>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate nam dolorum, placeat soluta sunt totam saepe illum aliquid nulla arzhitecto obcaecati ab? Amet eius magni laboriosam accusantium officia quos.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores necessitatibus id quod ducimus dolorum eos, molestias ipsam commodi illo officiis explicabo labore iusto praesentium nostrum aliquam qui quaerat nobis! Quo fuga eaque sunt earum dignissimos, nihil quas saepe qui ducimus explicabo voluptatem neque consequuntur tempore temporibus ipsum, facere placeat.</p>
+
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam cupiditate nam dolorum, placeat soluta sunt totam saepe illum aliquid nulla arzhitecto obcaecati ab? Amet eius magni laboriosam accusantium officia quos.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores necessitatibus id quod ducimus dolorum eos, molestias ipsam commodi illo officiis explicabo labore iusto praesentium nostrum aliquam qui quaerat nobis! Quo fuga eaque sunt earum dignissimos, nihil quas saepe qui ducimus explicabo voluptatem neque consequuntur tempore temporibus ipsum, facere placeat.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi asperiores necessitatibus id quod ducimus dolorum eos, molestias ipsam commodi illo officiis explicabo labore iusto praesentium nostrum aliquam qui quaerat nobis! Quo fuga eaque sunt earum dignissimos, nihil quas saepe qui ducimus explicabo voluptatem neque consequuntur tempore temporibus ipsum, facere placeat.</p>
+    </div>
+  </body>
+</html>
