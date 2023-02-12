@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <div class="item el1">1 (z-index: 10)</div>
+      <div class="item el2">2 (z-index: 0)</div>
+      <div class="item el3">3 (z-index: 100)</div>
+      <div class="group">
+        <div class="item el4">4 (z-index: 40)</div>
+        <div class="item el5">5 (z-index: 30)</div>
+        <div class="item el6">6 (z-index: 100)</div>
+      </div>
+    </section>
+    <section class="comments">
+      <p>All elements have initial <b>z-index: 0</b>. If two or more elements have same index value, they will appear on the screen based on their order in the HTML document (the later in the HTML the higher priority).</p>
+
+      <p>The higher the z-index the closer to you is the element. z-index is the <b>'z' axis</b> of the coordinate system with <b>'0 position'</b> at the screen level. There are negative indexes also...</p>
+
+      <p>It is possible to use <b>'z-index'</b> as a group but the container of the group must <b>NOT</b> have <b>'position: static'</b>. It must be positioned with some other value than 'static'.</p>
+      
+      <p>The elements inside a container which container has z-index set, have z-index of the container comparing the z-indexes of all elements outside of the container but inside the container the elements are compairing to one another with their z-indexes. The actual z-indexes inside the container matter between the elements inside but as far as outside the container the group has the z-index of the container...</p>
+
+      <p>See the example above. The elements 4, 5, 6 are in a group with <b>z-index: 20</b> of the group.</p>
+  </body>
+</html>
