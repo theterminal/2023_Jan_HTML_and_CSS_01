@@ -1,8 +1,12 @@
+html {
+
+}
+
 section {
     padding: 16px;
     width: 451px;
-    height: 541px;
-    border: 6px solid #e6e6e6;
+    height: 540px;
+    border: 8px solid #e6e6e6;
 }
 
 h2 {
