@@ -2,14 +2,14 @@ body {
     background-color:  #02475e;
 }
 
-article h2 {
+h2 {
     margin: 12px;
     font-size: 36px;
     color: #fefecc;
     text-align: center;
 }
 
-article p {
+p {
     padding: 10px;
     font-family: Arial, sans-serif;
     line-height: 24px;
@@ -17,14 +17,14 @@ article p {
     text-indent: 30px;
 }
 
-article div {
-    margin-left: 30px;
+div {
+    margin-bottom: 30px;
     border-top: 2px solid #fff;
     position: relative;
     top: 20px;
 }
 
-article span {
+span {
     margin: 0px auto;
     padding: 3px 5px;
     background-color: #fff;
