@@ -1,0 +1,13 @@
+.cards{
+    display: grid;
+    /* grid-template-columns: 200px 200px 200px; */
+    /* grid-template-columns: 30% 200px 200px; */
+    /* grid-template-columns: repeat(3, 33.33%); */
+    /* grid-template-columns: 2fr repeat(2, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+
+    /* grid-template-columns: 30% repeat(3, 200px); */
+    /* grid-template-rows: repeat(3, 200px); */
+    
+    gap: 16px 32px;
+}
