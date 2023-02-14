@@ -1,0 +1,32 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+.viewport {
+    height: 50%;
+}
+
+.card {
+    width: 400px;
+}
+
+.container-1 {
+    background-color: lightblue;
+}
+
+.container-2 {
+    background-color: lightpink;
+}
+
+section {
+    position: absolute;
+    display: block;
+    height: 300px;
+    top: 16px;
+    left: auto;
+
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
