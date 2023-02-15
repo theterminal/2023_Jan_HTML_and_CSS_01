@@ -1,0 +1,47 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+ul {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 30px;
+    
+}
+
+li {
+    margin-left: 10px;
+    display: inline-block;
+    list-style-type: none;
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+li:first-child {
+    margin-left: unset;
+}
+
+a {
+    border-radius: 50%;
+    text-decoration: none;
+    color: black;
+}
+
+a#fb:hover {
+    color: #4545ac;
+}
+
+a#tw:hover {
+    color: #5656ff;
+}
+
+a#go:hover {
+    color: #b42116;
+}
+
+a#li:hover {
+    color: #4242ae;
+}
+
+a#in:hover {
+    color: #7d8285;
+}
