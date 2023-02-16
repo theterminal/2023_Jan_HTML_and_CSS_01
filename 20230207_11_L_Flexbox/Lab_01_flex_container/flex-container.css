@@ -1,0 +1,195 @@
+/************************************
+
+          General styling
+
+ ************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+.section-titles {
+  margin: 100px 0px 20px;
+  padding: 20px;
+  background-color: beige;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+
+section {
+  margin: 50px 0px;
+}
+
+
+
+/************************************
+
+          Container
+
+ ************************************/
+
+.container {
+  padding: 12px;
+  border: 2px dashed black;
+}
+
+.container .item {
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.container .item:nth-child(1) {
+  background-color: #845ec2;
+}
+.container .item:nth-child(2) {
+  background-color: #0081cf;
+}
+.container .item:nth-child(3) {
+  background-color: #d65db1;
+}
+.container .item:nth-child(4) {
+  background-color: #ff9671;
+}
+.container .item:nth-child(5) {
+  background-color: #00c9a7;
+}
+.container .item:nth-child(6) {
+  background-color: #c34a36;
+}
+
+
+
+/************************************
+
+          Container 1
+
+ ************************************/
+
+.container-1 {
+  padding: 12px;
+  border: 2px dashed black;
+}
+
+.container-1 .item {
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.container-1 .item:nth-child(1) {
+  background-color: #845ec2;
+}
+.container-1 .item:nth-child(2) {
+  background-color: #0081cf;
+}
+.container-1 .item:nth-child(3) {
+  background-color: #d65db1;
+}
+.container-1 .item:nth-child(4) {
+  background-color: #ff9671;
+}
+.container-1 .item:nth-child(5) {
+  background-color: #00c9a7;
+}
+.container-1 .item:nth-child(6) {
+  background-color: #c34a36;
+}
+
+/************************************
+
+          Flexbox Container 1
+
+ ************************************/
+
+.container-1 {
+  display: flex;
+  
+  /* display: inline-flex; */
+  /* almost same as inline-box */
+  
+  /* overflow: hidden; */
+  /*for if the content doesn't fit in the container */
+  
+  /* width: 50%; *//* can be used to limit the width */
+  
+  /* height: 500px; */
+  
+  /* flex-direction: column; */
+  
+  flex-wrap: wrap;
+
+  align-content: center;
+  /* "align-content" must have "flex-wrap" in use */
+
+  justify-content: space-evenly;
+  
+  align-items: center;
+
+  /* gap: 30px; */
+  /* "gap" is the same as "gap" in grid */
+}
+
+
+
+/************************************
+
+          Container 2
+
+ ************************************/
+
+ .container-2 {
+  /* padding: 12px; */
+  border: 2px dashed black;
+}
+
+.container-2 .item {
+  padding: 12px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+.container-2 .item:nth-child(1) {
+  background-color: #845ec2;
+}
+.container-2 .item:nth-child(2) {
+  background-color: #0081cf;
+}
+.container-2 .item:nth-child(3) {
+  background-color: #d65db1;
+}
+.container-2 .item:nth-child(4) {
+  background-color: #ff9671;
+}
+.container-2 .item:nth-child(5) {
+  background-color: #00c9a7;
+}
+.container-2 .item:nth-child(6) {
+  background-color: #c34a36;
+}
+
+/************************************
+
+          Flexbox Container 2
+
+ ************************************/
+
+.container-2 {
+  /* height: 500px; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 30px;
+}
