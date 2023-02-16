@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 5 - Cards with grid layout</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section>
+        <!-- Card Layouts -->
+        <h2 class="title-example">Card Layouts</h2>
+
+        <article class="designer-card card-1">
+            <img class ="img-bg" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80" alt="background image">
+        
+            <div class="content">
+                <p class="tag">Markets</p>
+
+                <h2 class="title">
+                    Make Your Life Better by Saying Thank You
+                </h2>
+
+                <div class="meta-info">
+                    <div class="writer">
+                        <img  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Image">
+                    </div>
+
+                    <p class="name">Isabel Reynold</p>
+                    <p class="date">October 9, 2021</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="card card-2">
+            <img class="img-bg" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" alt="Background image">
+
+            <div class="content">
+                <ul class="meta" role="list">
+                    <li class="meta-item">Music</li>
+                    <li class="meta-item">News</li>
+                    <li class="meta-item">27 Jan 2023</li>
+                </ul>
+
+                <h2 class="title">Alice Rodrigz: The new Metallica</h2>
+
+                <p class="description">Pseudo Elements have 2 colons (::) and Pseudo Classes have only one colon (:)<br>Examples: .card::before {property: value;} - this is Pseudo Elemet (it does NOT exist in the HTML but it is visible only)<br>
+                .card:hover {property: value} - this is a Pseudo Class (it exists in the HTML)</p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <!-- Grid Layouts -->
+        <h2 class="title-example">Grid Layouts</h2>
+
+        <ul id="simple-grid" role="list">
+            <li class="item">List Item 1</li>
+            <li class="item">List Item 2</li>
+            <li class="item">List Item 3</li>
+            <li class="item">List Item 4</li>
+            <li class="item">List Item 5</li>
+            <li class="item">List Item 6</li>
+            <li class="item">List Item 7</li>
+            <li class="item">List Item 8</li>
+        </ul>
+    </section>
+
+    <section>
+        <!-- Grid Areas -->
+        <h2 class="title-example">Grid Area Layouts</h2>
+
+        <ul id="areas-grid" role="list">
+            <li class="item item-1">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1550686041-366ad85a1355?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJhbmRvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    
+                    <h2>Grid layout element 1</h2>
+
+                </article>
+            </li>
+
+            <li class="item item-2">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1613336026275-d6d473084e85?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJhbmRvbXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    
+                    <h2>Grid layout element 2</h2>
+
+                </article>
+            </li>
+
+            <li class="item item-3">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    
+                    <h2>Grid layout element 3</h2>
+
+                </article>
+            </li>
+
+            <li class="item item-4">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1485550409059-9afb054cada4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    
+                    <h2>Grid layout element 4</h2>
+
+                </article>
+            </li>
+
+            <li class="item item-5">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+                    
+                    <h2>Grid layout element 5</h2>
+
+                </article>
+            </li>
+
+            <li class="item item-6">
+                <article class="grid-article">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="">
+                    
+                    <h2>Grid layout element 6</h2>
+
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <!-- Grid Cards -->
+        <h2 class="title-example">Grid Card Layouts</h2>
+
+        <ul id="cards-grid" role="list">
+            <li class="item landscape">
+                <article class="designer-card">
+                    <img class ="img-bg" src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1844&q=80" alt="background image">
+                
+                    <div class="content">
+                        <p class="tag">Markets</p>
+        
+                        <h2 class="title">
+                            Make Your Life Better by Saying Thank You
+                        </h2>
+        
+                        <div class="meta-info">
+                            <div class="writer">
+                                <img  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Image">
+                            </div>
+        
+                            <p class="name">Isabel Reynold</p>
+                            <p class="date">October 9, 2021</p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+
+            <li class="item portrate">
+                <article class="card">
+                    <img class="img-bg" src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=699&q=80" alt="Background image">
+        
+                    <div class="content">
+                        <ul class="meta" role="list">
+                            <li class="meta-item">Music</li>
+                            <li class="meta-item">News</li>
+                            <li class="meta-item">27 Jan 2023</li>
+                        </ul>
+        
+                        <h2 class="title">Alice Rodrigz: The new Metallica</h2>
+        
+                        <p class="description">Pseudo Elements have 2 colons (::) and Pseudo Classes have only one colon (:)<br>Examples: .card::before {property: value;} - this is Pseudo Elemet (it does NOT exist in the HTML but it is visible only)<br>
+                        .card:hover {property: value} - this is a Pseudo Class (it exists in the HTML)</p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="item portrate">
+                <article class="card">
+                    <img class="img-bg" src="https://images.unsplash.com/photo-1627933997820-8166ef185b95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8cG9ydHJhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="Background image">
+        
+                    <div class="content">
+                        <ul class="meta" role="list">
+                            <li class="meta-item">Music</li>
+                            <li class="meta-item">News</li>
+                            <li class="meta-item">27 Jan 2023</li>
+                        </ul>
+        
+                        <h2 class="title">Alice Rodrigz: The new Metallica</h2>
+        
+                        <p class="description">Pseudo Elements have 2 colons (::) and Pseudo Classes have only one colon (:)<br>Examples: .card::before {property: value;} - this is Pseudo Elemet (it does NOT exist in the HTML but it is visible only)<br>
+                        .card:hover {property: value} - this is a Pseudo Class (it exists in the HTML)</p>
+                    </div>
+                </article>
+            </li>
+
+            <li class="item landscape">
+                <article class="designer-card">
+                    <img class ="img-bg" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80" alt="background image">
+                
+                    <div class="content">
+                        <p class="tag">Markets</p>
+        
+                        <h2 class="title">
+                            Make Your Life Better by Saying Thank You
+                        </h2>
+        
+                        <div class="meta-info">
+                            <div class="writer">
+                                <img  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Image">
+                            </div>
+        
+                            <p class="name">Isabel Reynold</p>
+                            <p class="date">October 9, 2021</p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
