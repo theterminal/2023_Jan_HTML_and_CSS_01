@@ -1,0 +1,321 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title-example {
+    margin: 20px;
+    padding: 20px;
+    background-color: bisque;
+    border: 1px solid grey;
+    border-radius: 16px;
+}
+
+section {
+    margin: 150px 0px;
+}
+
+
+
+/************************************************
+
+            Example 1 - Designer Card
+            
+ ************************************************/
+
+.designer-card {
+    margin: 20px;
+    position: relative;
+    /* max-width: 700px; */
+    border-radius: 6px;
+    overflow: hidden; /* so the radius can be visible */
+    color: white;
+}
+
+.designer-card.card-1 {
+    max-width: 700px;
+}
+
+.designer-card::before {
+    /* Creating darker layer for contrast */
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: 0.3;
+    z-index: 1; /* because when hover over it it loses the layer - this is the fix */
+
+    transition: opacity 300ms ease-in-out;
+}
+
+.designer-card:hover::before {
+    opacity: 0.5;
+}
+
+.designer-card .img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform 500ms ease-in-out; /* use it on the element you're changing */
+}
+
+.designer-card:hover .img-bg {
+    transform: scale(2.0); /* goes with the transition property in the element you're chnging */
+}
+
+.designer-card .content {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 12px;
+    z-index: 2; /* because of the hover efect and the z-index of the layer */
+}
+
+.designer-card .content .tag {
+    font-size: 14px;
+    color: orange;
+}
+
+.designer-card .content .title {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.designer-card .meta-info {
+    display: grid;
+    grid-template-columns: 20px 2fr 3fr;
+    gap: 6px;
+}
+
+.designer-card .meta-info .writer {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.designer-card .meta-info .writer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/**************************************
+
+            Example 2 - Card
+            
+ **************************************/
+
+ .card {
+    margin: 20px;
+    position: relative;
+    max-width: 300px;
+    aspect-ratio: 1/2;
+    border-radius: 6px;
+    overflow: hidden; /* so the radius can be visible */
+    color: white;
+ }
+
+ .card .img-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .card .content {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -201px;
+    padding: 12px;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(
+        180deg,
+        rgba(2,0,36,0) 0%, 
+        rgba(2,0,36,0.7231267507002801) 30%,
+        rgba(2,0,36,1) 60%);
+
+    transition: bottom 300ms linear;
+ }
+
+ .card .content .meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-bottom: 12px;
+    text-align: center;
+ }
+
+ .card .content .title {
+    font-size: 22px;
+    text-align: center;
+ }
+
+ .card .content .description {
+    margin-top: 10px;
+    height: 191px;
+    overflow: hidden;
+ }
+
+
+
+ /***************************************************
+ 
+                   Hover effects 
+                   
+ ****************************************************/
+
+ /* .card:hover .content {
+    bottom: 0px;
+ } */
+
+  .card .content:hover {
+    bottom: 0px;
+ }
+
+
+
+ /***************************************************
+ 
+                     Simple Grid 
+                   
+ ****************************************************/
+
+#simple-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 12px;
+
+    margin-top: 32px;
+    padding: 12px;
+    border: 1px dashed black;
+}
+
+#simple-grid .item {
+    background-color: orange;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+
+/***************************************************
+ 
+                     Grid Areas
+                   
+ ****************************************************/
+
+ #areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    grid-template-areas: 
+    "small-1 medium-1 large"
+    "small-1 medium-1 large"
+    "small-2 medium-1 large"
+    "small-2 medium-2 large"
+    "small-3 medium-2 large"
+    "small-3 medium-2 large";
+
+    gap: 12px;
+    margin: 32px;
+    padding: 12px;
+ }
+
+ #areas-grid .item-1 {
+    grid-area: small-1;
+ }
+
+ #areas-grid .item-2 {
+    grid-area: small-2;
+ }
+
+ #areas-grid .item-3 {
+    grid-area: small-3;
+ }
+
+ #areas-grid .item-4 {
+    grid-area: medium-1;
+ }
+
+ #areas-grid .item-5 {
+    grid-area: medium-2;
+ }
+
+ #areas-grid .item-6 {
+    grid-area: large;
+ }
+
+ #areas-grid .item {
+    overflow: hidden;
+ }
+
+ #areas-grid .grid-article {
+    position: relative;
+    height: 100%;
+ }
+
+ #areas-grid .grid-article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ #areas-grid .grid-article h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    text-align: center;
+    color: white;
+ }
+
+
+
+ /***************************************************
+ 
+                     Grid Cards
+                   
+ ****************************************************/
+
+
+ #cards-grid {
+    /* width: 1000px; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    grid-template-areas:
+    "land-1 land-1 land-1 land-1 port-1 port-2"
+    ". . land-2 land-2 land-2 land-2";
+ }
+
+ #cards-grid .landscape:first-of-type {
+    grid-area: land-1;
+ }
+
+ #cards-grid .landscape:last-of-type {
+    grid-area: land-2;
+ }
+
+ #cards-grid .portrate:first-of-type {
+    grid-area: port-1;
+ }
+
+ #cards-grid .portrate:last-of-type {
+    grid-area: port-2;
+ }
+
+ #cards-grid .card {
+    height: 100%;
+    aspect-ratio: auto;
+ }
