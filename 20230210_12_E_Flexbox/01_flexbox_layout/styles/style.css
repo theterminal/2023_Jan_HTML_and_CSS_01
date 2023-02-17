@@ -1,0 +1,56 @@
+body {
+    display: flex;  /* needed only for judge */
+}
+
+.container {
+    padding: 5rem;
+    background-color: #eee;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between; /* alines items on the main axis */
+    align-items: center; /* alines items on the cross axis */
+}
+
+.header,
+.main,
+.aside,
+.footer {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    box-shadow: 0px 0px 13px #818181;
+    color: #000;
+}
+
+.header {
+    height: 20%;
+    flex-basis: 100%;
+}
+
+.mid-aside {
+    display: inline-flex;
+
+    height: 50%;
+    gap: 30px;
+    flex-basis: 100%;
+    justify-content:space-between;
+    align-items: stretch;
+}
+
+    .main {
+        flex: 8 1 40rem;
+    }
+
+    .aside {
+        flex: 2 1 20rem;
+    }
+
+.footer {
+    height: 20%;
+    flex-basis: 100%;
+}
