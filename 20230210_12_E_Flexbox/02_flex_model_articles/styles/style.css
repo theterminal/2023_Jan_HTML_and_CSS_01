@@ -1,0 +1,20 @@
+html {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+    section {
+        margin: 50px auto;
+        padding: 50px;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        max-width: 70vw;
+        border: 1px solid gray;
+    }
+
+        h2 {
+            margin-bottom: 30px;
+            font-family: Georgia, serif;
+            line-height: 1.2;
+        }
