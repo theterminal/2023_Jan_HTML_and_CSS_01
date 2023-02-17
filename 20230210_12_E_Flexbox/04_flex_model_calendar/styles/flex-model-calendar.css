@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.container {
+    max-width: 65vw;
+    height: 350px;
+    margin: 24px;
+    border: 1px solid black;
+
+    display: flex;
+}
+
+    .week {
+        width: 75%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-right: 1px solid black;
+    }
+
+        .work-week {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+            border-bottom: 1px solid black;
+        }
+
+            .work-week .header {
+                height: 50%;
+                text-align: center;
+                border-bottom: 1px solid black;
+            }
+
+                .days span {
+                    border-right: 1px solid black;
+                }
+
+                .days span:last-child {
+                    border-right: none;
+                }
+
+                .work-week .header .header-span {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .work-week .days {
+                    display: flex;
+                    flex: 1;
+                }
+
+        .weekend {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 50%;
+        }
+
+            .weekend-header {
+                display: flex;
+                flex: 1;
+
+                border-bottom: 1px solid black;
+            }
+
+            .weekend .days {
+                display: flex;
+                flex: 1;
+            }
+
+    .notes {
+        width: 25%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+        .notes .remainders {
+            height: 50%;
+            border-bottom: 1px solid black;
+        }
+
+            .notes .remainders span {
+                height: 100%;
+            }
+
+        .notes .special-dates {
+            height: 50%;
+        }
+
+            .notes .special-dates span {
+                height: 100%;
+            }
+
+    span {
+        width: 100%;
+        display: block;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    
+    span {
+        /* deactivate this for 100% judge */
+        border: none;
+
+        /* activate this for 100% judge */
+        /* border: 1px solid black; */
+    }
