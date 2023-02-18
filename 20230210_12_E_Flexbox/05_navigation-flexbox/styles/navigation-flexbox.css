@@ -1,0 +1,45 @@
+body {
+    padding: 50px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+    .site-title span{
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 35px;
+       font-weight: bold;
+
+       align-self: flex-end;
+    }
+
+    .navigation ul {
+        display: flex;
+        align-items: center;
+
+        list-style-type: none;
+    }
+
+        .navigation ul li {
+            margin-left: 30px;
+        }
+
+            .navigation ul li a {
+                text-decoration: none;
+                color: rgb(0, 153, 0);
+            }
+
+    main h1 {
+        margin: 20px 0 5px;
+    }
+
+    main p {
+        margin-bottom: 20px;
+    }
+
