@@ -1,0 +1,108 @@
+/************************************
+
+               General
+
+ ************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e3e3e3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/************************************
+
+         Section - General
+
+ ************************************/
+
+.section {
+  margin: 20px;
+  padding: 12px;
+  background-color: #cfcfcf;
+}
+
+.section-title {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+section .container {
+  margin: 50px;
+  border: 1px solid blue;
+}
+
+section .container .item {
+  padding: 12px;
+  border-radius: 6px;
+}
+
+.section .item:nth-child(1) {
+  background-color: #845ec2;
+}
+.section .item:nth-child(2) {
+  background-color: #0081cf;
+}
+.section .item:nth-child(3) {
+  background-color: #d65db1;
+}
+.section .item:nth-child(4) {
+  background-color: #ff9671;
+}
+.section .item:nth-child(5) {
+  background-color: #00c9a7;
+}
+.section .item:nth-child(6) {
+  background-color: #c34a36;
+}
+
+
+
+/************************************
+
+          Flexbox - Section 2
+
+ ************************************/
+
+.section.two .container {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  /* "align-content" must have "flex-wrap" in use */
+  align-content: center;
+  /* "gap" is the same as "gap" in grid */
+  /* gap: 30px; */
+  
+  /* width: 50%; */
+  /* height: 500px; */
+  /* display: inline-flex; */
+  /* overflow: hidden; */
+}
+
+
+
+/************************************
+
+          Flexbox - Section 3
+
+ ************************************/
+
+.section.three .container {
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: center; */
+  gap: 10px;
+}
