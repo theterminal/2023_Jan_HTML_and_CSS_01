@@ -1,0 +1,17 @@
+@import './orange.css' screen and (min-width: 600px);
+@import './blue.css' screen and (min-width: 800px);
+
+body {
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    background-color: beige;
+    padding: 10px;
+    border-radius: 10px;
+    color: red;
+    font-size: 2rem;
+    box-shadow: 0px 0px 3px black;
+}
