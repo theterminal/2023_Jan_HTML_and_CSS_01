@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+}
+
+h1 {
+    color: red;
+}
+
+/*
+Media Quiries must be at the end of the CSS!
+
+@media screen and (mix-width: 300px) {
+}
+@media print and {max-width: 300px) {
+}
+@media all {
+}
+@media (min-width: 600px) and (max-width: 900px) {
+    this is AND option
+}
+@media (min-width: 900), (min-width: 1100px) {
+    this is OR option
+}
+@media (orientation: portrait) {
+
+}
+@media (orientation: landscape) {
+
+}
+*/
+
+@media (min-width: 600px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media (min-width: 800px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media (orientation: landscape) {
+    h1 {
+        color: balck;
+    }
+}
