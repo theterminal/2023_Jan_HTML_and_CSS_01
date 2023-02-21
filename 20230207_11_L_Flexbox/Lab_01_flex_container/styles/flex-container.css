@@ -11,6 +11,7 @@
 body {
   background-color: #e3e3e3;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 
 
@@ -22,7 +23,7 @@ body {
  ************************************/
 
 .section {
-  margin: 20px;
+  margin: 100px;
   padding: 12px;
   background-color: #cfcfcf;
 }
@@ -68,6 +69,29 @@ section .container .item {
 
 /************************************
 
+          Flexbox - Section 1
+
+ ************************************/
+
+.section.one .header {
+  padding: 20px 40px;
+  background-color: #0081cf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section.one .header h3 {
+  padding: 20px;
+  background-color: #cfcfcf;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+
+
+/************************************
+
           Flexbox - Section 2
 
  ************************************/
@@ -105,4 +129,25 @@ section .container .item {
   justify-content: flex-start;
   /* align-items: center; */
   gap: 10px;
+}
+
+
+
+/************************************
+
+          Flexbox - Section 4
+
+ ************************************/
+
+.section.four .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.section.four .container .item {
+  width: 100%;
+  text-align: center;
+  ;
 }
