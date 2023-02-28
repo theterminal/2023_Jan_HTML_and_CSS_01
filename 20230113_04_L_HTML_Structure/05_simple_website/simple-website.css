@@ -4,46 +4,46 @@ body {
     background-color: #CCCCCC;
 }
 
-ul {
+.nav ul {
+    margin: 0px;
+    padding: 0px;
     background-color: #444;
     text-align: center;
-    padding: 0px;
-    margin: 0px;
     list-style: none;
 }
 
-li {
-    display: inline-block;
-    font-size: 24px;
-    line-height: 40px;
-    height: 40px;
-    padding: 20px;
-}
+    .nav ul li {
+        padding: 20px;
+        display: inline-block;
+        font-size: 24px;
+        line-height: 40px;
+        height: 40px;
+    }
 
-a {
-    text-decoration: none;
-    color: #ffffff;
-}
+        .nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+        }
 
-section {
+.section {
     margin-left: 20px;
 }
 
-h1 {
-    font-size: 28px;
-}
+    .article > p {
+        font-size: 24px;
+    }
 
-article>p {
-    font-size: 24px;
-}
+    .article .header p {
+        font-style: italic;
+    }
 
-header p {
-    font-style: italic;
-}
+    .article .header h1 {
+        font-size: 28px;
+    }
 
-footer {
+.footer {
+    padding: 10px;
     background-color: #444;
     color: #fff;
     text-align: center;
-    padding: 10px;
 }
