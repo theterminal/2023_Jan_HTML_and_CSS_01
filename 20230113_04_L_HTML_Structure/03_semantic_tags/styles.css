@@ -3,13 +3,13 @@ body {
     padding: 15px;
 }
 
-header, footer {
+.header, .footer {
     width: 480px;
     padding: 5px 15px;
     background-color: #f2dcbb;
 }
 
-main {
+.main {
     width: 480px;
     background-color:  #f9f7cf;
 }
